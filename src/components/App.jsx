@@ -11,11 +11,11 @@ export const App = () => {
 
   const handleClick = option => {
     if (option === 'Good') {
-      setGood(good + 1);
+      setGood(prev => prev + 1);
     } else if (option === 'Neutral') {
-      setNeutral(neutral + 1);
+      setNeutral(prev => prev + 1);
     } else if (option === 'Bad') {
-      setBad(bad + 1);
+      setBad(prev => prev + 1);
     }
   };
   const totalFeedback = () => {
